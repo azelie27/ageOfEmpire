@@ -1,0 +1,12 @@
+class Human {
+
+    public Human() {
+    }
+
+
+
+   
+
+
+
+}
