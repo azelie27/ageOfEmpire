@@ -38,8 +38,6 @@ class Building {
     public String toString() {
         return "Building [castle=" + castle + ", house=" + house + ", windmill=" + windmill + "]";
     }
-
-
     
 
 }
