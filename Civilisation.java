@@ -2,11 +2,13 @@ class Civilisation  {
 
     
     private String name;
-    private Carte carte;
+    private Tribus tribu;
+    private Unites units;
 
-    public Civilisation(String name, Carte carte) {
+    public Civilisation(String name, Tribus tribu, Unites units) {
         this.name = name;
-        this.carte = carte;
+        this.tribu = tribu;
+        this.units = units;
     }
 
     public String getName() {
@@ -17,21 +19,31 @@ class Civilisation  {
         this.name = name;
     }
 
-    public Carte getCarte() {
-        return carte;
+    public Tribus getTribu() {
+        return tribu;
     }
 
-    public void setCarte(Carte carte) {
-        this.carte = carte;
+    public void setTribu(Tribus tribu) {
+        this.tribu = tribu;
+    }
+
+    public Unites getUnits() {
+        return units;
+    }
+
+    public void setUnits(Unites units) {
+        this.units = units;
     }
 
     @Override
     public String toString() {
-        return "Civilisation [carte=" + carte + ", name=" + name + "]";
+        return "Civilisation [name=" + name + ", tribu=" + tribu + ", units=" + units + "]";
     }
 
-   
     
+
+    
+
 
     
    

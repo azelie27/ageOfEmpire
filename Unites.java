@@ -1,4 +1,4 @@
-class Unites   {
+class Unites  {
 
     private String name;
     private Type genre;
