@@ -2,11 +2,9 @@ class Tribus {
 
     
     private String name;
-    private Human human;
 
-    public Tribus(String name, Human human) {
+    public Tribus(String name) {
         this.name = name;
-        this.human = human;
     }
 
     public String getName() {
@@ -17,19 +15,12 @@ class Tribus {
         this.name = name;
     }
 
-    public Human getHuman() {
-        return human;
-    }
-
-    public void setHuman(Human human) {
-        this.human = human;
-    }
-
     @Override
     public String toString() {
-        return "Tribus [human=" + human + ", name=" + name + "]";
+        return "Tribus [name=" + name + "]";
     }
-
+    
+    
     
     
 
