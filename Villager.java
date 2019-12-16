@@ -7,7 +7,7 @@ class Villager extends Human implements Attack {
     
     
     public void attack(){
-        System.out.println("Hit with a little fork");
+        System.out.println("Hits with a little fork");
     }
 
     @Override

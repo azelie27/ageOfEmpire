@@ -7,11 +7,8 @@ public class Ressource {
     private Vegetaux vegetaux;
     private Metal metal;
 
-    public Ressource(Arbre arbre, Pierre pierre, Vegetaux vegetaux, Metal metal) {
-        this.arbre = arbre;
-        this.pierre = pierre;
-        this.vegetaux = vegetaux;
-        this.metal = metal;
+    public Ressource() {
+        
 
     }
 
