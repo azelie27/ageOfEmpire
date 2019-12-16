@@ -1,11 +1,14 @@
+import java.util.ArrayList;
+
+
 class Civilisation  {
 
     
     private String name;
-    private Tribus tribu;
-    private Unites units;
+    private ArrayList <Tribus> tribu;
+    private ArrayList <Unites> units;
 
-    public Civilisation(String name, Tribus tribu, Unites units) {
+    public Civilisation(String name, ArrayList<Tribus> tribu, ArrayList<Unites> units) {
         this.name = name;
         this.tribu = tribu;
         this.units = units;
@@ -19,19 +22,19 @@ class Civilisation  {
         this.name = name;
     }
 
-    public Tribus getTribu() {
+    public ArrayList<Tribus> getTribu() {
         return tribu;
     }
 
-    public void setTribu(Tribus tribu) {
+    public void setTribu(ArrayList<Tribus> tribu) {
         this.tribu = tribu;
     }
 
-    public Unites getUnits() {
+    public ArrayList<Unites> getUnits() {
         return units;
     }
 
-    public void setUnits(Unites units) {
+    public void setUnits(ArrayList<Unites> units) {
         this.units = units;
     }
 
@@ -40,6 +43,9 @@ class Civilisation  {
         return "Civilisation [name=" + name + ", tribu=" + tribu + ", units=" + units + "]";
     }
 
+    
+    
+  
     
 
     

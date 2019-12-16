@@ -1,14 +1,19 @@
+import java.util.ArrayList;
+
+
+
+
 class Unites  {
 
     private String name;
-    private Type genre;
+    private ArrayList <Human> humans;
+    private ArrayList <Building> buildings;
 
-    public Unites(String name, Type genre) {
+    public Unites(String name, ArrayList<Human> humans, ArrayList<Building> buildings) {
         this.name = name;
-        this.genre = genre;
+        this.humans = humans;
+        this.buildings = buildings;
     }
-
-    
 
     public String getName() {
         return name;
@@ -18,19 +23,29 @@ class Unites  {
         this.name = name;
     }
 
-    public Type getGenre() {
-        return genre;
+    public ArrayList<Human> getHumans() {
+        return humans;
     }
 
-    public void setGenre(Type genre) {
-        this.genre = genre;
+    public void setHumans(ArrayList<Human> humans) {
+        this.humans = humans;
+    }
+
+    public ArrayList<Building> getBuildings() {
+        return buildings;
+    }
+
+    public void setBuildings(ArrayList<Building> buildings) {
+        this.buildings = buildings;
     }
 
     @Override
     public String toString() {
-        return "Unites [genre=" + genre + ", name=" + name + "]";
+        return "Unites [buildings=" + buildings + ", humans=" + humans + ", name=" + name + "]";
     }
 
+    
+   
     
 
 
