@@ -2,44 +2,48 @@
 
 public class TypeBatiment {
 
-    private String ferme;
-    private String chateau;
-    private String maison;
-    private String forge;
+    
+    private Ferme ferme;
+    private Maison maison;
+    private Chateau chateau;
+    private Forge forge;
 
     public TypeBatiment() {
-        
+        this.ferme = ferme;
+        this.maison = maison;
+        this.chateau = chateau;
+        this.forge = forge;
     }
 
-    public String getFerme() {
+    public Ferme getFerme() {
         return ferme;
     }
 
-    public void setFerme(String ferme) {
+    public void setFerme(Ferme ferme) {
         this.ferme = ferme;
     }
 
-    public String getChateau() {
-        return chateau;
-    }
-
-    public void setChateau(String chateau) {
-        this.chateau = chateau;
-    }
-
-    public String getMaison() {
+    public Maison getMaison() {
         return maison;
     }
 
-    public void setMaison(String maison) {
+    public void setMaison(Maison maison) {
         this.maison = maison;
     }
 
-    public String getForge() {
+    public Chateau getChateau() {
+        return chateau;
+    }
+
+    public void setChateau(Chateau chateau) {
+        this.chateau = chateau;
+    }
+
+    public Forge getForge() {
         return forge;
     }
 
-    public void setForge(String forge) {
+    public void setForge(Forge forge) {
         this.forge = forge;
     }
 
@@ -49,6 +53,10 @@ public class TypeBatiment {
                 + "]";
     }
 
+   
+
+   
+    
 
 
     
