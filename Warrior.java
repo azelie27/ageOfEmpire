@@ -1,4 +1,4 @@
-class Warrior extends Human implements Attack {
+class Warrior extends Human implements ActionsHumains {
 
     
 
@@ -14,6 +14,18 @@ class Warrior extends Human implements Attack {
     @Override
     public String toString() {
         return "Warrior []";
+    }
+
+    @Override
+    public void mange() {
+        // TODO Auto-generated method stub
+
+    }
+
+    @Override
+    public void consruit() {
+        // TODO Auto-generated method stub
+
     }
 
     

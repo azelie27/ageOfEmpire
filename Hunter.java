@@ -1,5 +1,5 @@
 
-class Hunter extends Human implements Attack {
+class Hunter extends Human implements ActionsHumains {
 
     
     public void attack() {
@@ -13,6 +13,15 @@ class Hunter extends Human implements Attack {
     @Override
     public String toString() {
         return "Hunter []";
+    }
+
+
+    public void mange() {
+
+    }
+
+    public void consruit() {
+
     }
 
 

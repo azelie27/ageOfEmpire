@@ -3,13 +3,13 @@
 public class Animal {
 
     private String race;
-    private boolean edible;
+    private boolean comestible;
     private boolean mangeLesGens;
     private boolean tropMignon;
 
-    public Animal(String race, boolean edible, boolean mangeLesGens, boolean tropMignon) {
+    public Animal(String race, boolean comestible, boolean mangeLesGens, boolean tropMignon) {
         this.race = race;
-        this.edible = edible;
+        this.comestible = comestible;
         this.mangeLesGens = mangeLesGens;
         this.tropMignon = tropMignon;
     }
@@ -22,12 +22,12 @@ public class Animal {
         this.race = race;
     }
 
-    public boolean isEdible() {
-        return edible;
+    public boolean isComestible() {
+        return comestible;
     }
 
-    public void setEdible(boolean edible) {
-        this.edible = edible;
+    public void setComestible(boolean comestible) {
+        this.comestible = comestible;
     }
 
     public boolean isMangeLesGens() {
@@ -48,7 +48,7 @@ public class Animal {
 
     @Override
     public String toString() {
-        return "Animal [edible=" + edible + ", mangeLesGens=" + mangeLesGens + ", race=" + race + ", tropMignon="
+        return "Animal [comestible=" + comestible + ", mangeLesGens=" + mangeLesGens + ", race=" + race + ", tropMignon="
                 + tropMignon + "]";
     }
 

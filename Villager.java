@@ -1,9 +1,17 @@
-class Villager extends Human implements Attack {
+class Villager extends Human implements ActionsHumains {
 
   
 
     public void attack() {
-        System.out.println("x");
+        System.out.println("attaque à la fouche");
+
+    }
+
+    public void mange() {
+
+    }
+
+    public void consruit() {
 
     }
 
@@ -21,6 +29,9 @@ class Villager extends Human implements Attack {
     public String toString() {
         return "Villager []";
     }
+
+
+    
 
     
 

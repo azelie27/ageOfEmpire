@@ -1,4 +1,4 @@
-class Pretre extends Human implements Attack {
+class Pretre extends Human implements ActionsHumains {
 
     
 
@@ -16,6 +16,18 @@ class Pretre extends Human implements Attack {
     @Override
     public String toString() {
         return "Pretre []";
+    }
+
+
+    public void mange() {
+      
+
+    }
+
+
+    public void consruit() {
+       
+
     }
 
     
