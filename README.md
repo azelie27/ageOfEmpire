@@ -28,11 +28,11 @@
     * Maison extends Building
    
 * Ressource() // arbre, pierre, vegetaux, metal 
-   _?????? heritage ?????_
-   Arbre
-   Pierre
-   Vegetaux(int calorie, boolean comestible)
-   Metal
+   * _?????? heritage ?????_
+   * Arbre
+   * Pierre
+   * Vegetaux(int calorie, boolean comestible)
+   * Metal
 
 * Animal(String race, boolean comestible, boolean mangeLesGens, boolean tropMignon)
 
