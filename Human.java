@@ -8,6 +8,10 @@ class Human {
         this.armure = armure;
     }
 
+    public Human() {
+        
+    }
+
     public int getPointdeVie() {
         return pointdeVie;
     }

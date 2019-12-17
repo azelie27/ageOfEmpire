@@ -3,7 +3,11 @@ class Villager extends Human implements Attack {
   
 
     public void attack() {
-        
+        System.out.println("x");
+
+    }
+
+    public Villager() {
 
     }
 
