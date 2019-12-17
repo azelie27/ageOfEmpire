@@ -1,5 +1,9 @@
 class Human {
 
+
+    
+
+ 
     private int pointdeVie;
     private String armure;
 
@@ -34,5 +38,6 @@ class Human {
    
 
     
+
 
 }

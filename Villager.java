@@ -1,3 +1,4 @@
+
 class Villager extends Human implements ActionsHumains {
 
   
@@ -23,12 +24,18 @@ class Villager extends Human implements ActionsHumains {
 
     public Villager(int pointdeVie, String armure) {
         super(pointdeVie, armure);
-    }
 
+    }
     @Override
     public String toString() {
         return "Villager []";
     }
+
+
+  
+
+ 
+}
 
 
     
@@ -38,4 +45,4 @@ class Villager extends Human implements ActionsHumains {
   
 
  
-}
+
