@@ -2,63 +2,63 @@
 
 public class Animal {
 
-    private String lapin;
-    private String chat;
-    private String oiseau;
-    private String poisson;
-    private String ours;
+    private String race;
+    private boolean edible;
+    private boolean mangeLesGens;
+    private boolean tropMignon;
 
-    public Animal() {
-        
+    public Animal(String race, boolean edible, boolean mangeLesGens, boolean tropMignon) {
+        this.race = race;
+        this.edible = edible;
+        this.mangeLesGens = mangeLesGens;
+        this.tropMignon = tropMignon;
     }
 
-    public String getLapin() {
-        return lapin;
+    public String getRace() {
+        return race;
     }
 
-    public void setLapin(String lapin) {
-        this.lapin = lapin;
+    public void setRace(String race) {
+        this.race = race;
     }
 
-    public String getChat() {
-        return chat;
+    public boolean isEdible() {
+        return edible;
     }
 
-    public void setChat(String chat) {
-        this.chat = chat;
+    public void setEdible(boolean edible) {
+        this.edible = edible;
     }
 
-    public String getOiseau() {
-        return oiseau;
+    public boolean isMangeLesGens() {
+        return mangeLesGens;
     }
 
-    public void setOiseau(String oiseau) {
-        this.oiseau = oiseau;
+    public void setMangeLesGens(boolean mangeLesGens) {
+        this.mangeLesGens = mangeLesGens;
     }
 
-    public String getPoisson() {
-        return poisson;
+    public boolean isTropMignon() {
+        return tropMignon;
     }
 
-    public void setPoisson(String poisson) {
-        this.poisson = poisson;
-    }
-
-    public String getOurs() {
-        return ours;
-    }
-
-    public void setOurs(String ours) {
-        this.ours = ours;
+    public void setTropMignon(boolean tropMignon) {
+        this.tropMignon = tropMignon;
     }
 
     @Override
     public String toString() {
-        return "Animal [chat=" + chat + ", lapin=" + lapin + ", oiseau=" + oiseau + ", ours=" + ours + ", poisson="
-                + poisson + "]";
+        return "Animal [edible=" + edible + ", mangeLesGens=" + mangeLesGens + ", race=" + race + ", tropMignon="
+                + tropMignon + "]";
     }
 
+    
+    
+  
+    
 
+
+    
     
 
 }
