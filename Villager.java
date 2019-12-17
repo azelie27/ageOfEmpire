@@ -1,19 +1,24 @@
-class Villager extends Human implements Attack { 
+class Villager extends Human implements Attack {
 
-    public Villager() {
+  
+
+    public void attack() {
         
+
     }
 
     
-    
-    public void attack(){
-        System.out.println("Hits with a little fork");
+
+    public Villager(int pointdeVie, String armure) {
+        super(pointdeVie, armure);
     }
 
     @Override
     public String toString() {
         return "Villager []";
     }
+
+    
 
   
 
