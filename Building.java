@@ -1,13 +1,14 @@
 import java.util.ArrayList;
+import java.util.Arrays;
 
 class Building {
 
-   private ArrayList <Ressource> ressources;
-   private TypeBatiment typeBatiment;
+    private ArrayList<Ressource> ressources;
+    private int[][] size;
 
-    public Building(ArrayList<Ressource> ressources, TypeBatiment typeBatiment) {
+    public Building(ArrayList<Ressource> ressources, int[][] size) {
         this.ressources = ressources;
-        this.typeBatiment = typeBatiment;
+        this.size = size;
     }
 
     public ArrayList<Ressource> getRessources() {
@@ -18,20 +19,23 @@ class Building {
         this.ressources = ressources;
     }
 
-    public TypeBatiment getTypeBatiment() {
-        return typeBatiment;
+    public int[][] getSize() {
+        return size;
     }
 
-    public void setTypeBatiment(TypeBatiment typeBatiment) {
-        this.typeBatiment = typeBatiment;
+    public void setSize(int[][] size) {
+        this.size = size;
     }
 
     @Override
     public String toString() {
-        return "Building [ressources=" + ressources + ", typeBatiment=" + typeBatiment + "]";
+        return "Building [ressources=" + ressources + ", size=" + Arrays.toString(size) + "]";
     }
-
+   
     
+   
+    
+  
 
    
     
