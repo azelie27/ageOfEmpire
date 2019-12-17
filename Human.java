@@ -1,38 +1,43 @@
 class Human {
 
-    int level;
-    int age;
-
-    public Human() {
-    }
-
-    public Human(int level, int age) {
-        this.level = level;
-        this.age = age;
-    }
-
-    public int getLevel() {
-        return level;
-    }
-
-    public void setLevel(int level) {
-        this.level = level;
-    }
-
-    public int getAge() {
-        return age;
-    }
-
-    public void setAge(int age) {
-        this.age = age;
-    }
 
     
 
+ 
+    private int pointdeVie;
+    private String armure;
 
+    public Human(int pointdeVie, String armure) {
+        this.pointdeVie = pointdeVie;
+        this.armure = armure;
+    }
+
+    public Human() {}
+
+    public int getPointdeVie() {
+        return pointdeVie;
+    }
+
+    public void setPointdeVie(int pointdeVie) {
+        this.pointdeVie = pointdeVie;
+    }
+
+    public String getArmure() {
+        return armure;
+    }
+
+    public void setArmure(String armure) {
+        this.armure = armure;
+    }
+
+    @Override
+    public String toString() {
+        return "Human [armure=" + armure + ", pointdeVie=" + pointdeVie + "]";
+    }
 
    
 
+    
 
 
 }

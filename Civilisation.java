@@ -3,6 +3,7 @@ import java.util.ArrayList;
 
 class Civilisation  {
 
+
     private String name = "";
     private int early = 0;      // période début
     private int late = 0;       // période fin
@@ -15,6 +16,8 @@ class Civilisation  {
     }
 
 
+
+   
     public String getName() {
         return name;
     }
@@ -22,6 +25,7 @@ class Civilisation  {
     public void setName(String name) {
         this.name = name;
     }
+
 
     public int getEarly() {
         return early;
@@ -45,13 +49,24 @@ class Civilisation  {
 
     public void setTribu(ArrayList<Tribu> tribu) {
 		this.tribu = tribu;
+
+
+  
     }
 
     @Override
     public String toString() {
+
         return "Civilisation [early=" + early + ", late=" + late + ", name=" + name + "]";
     }
     
 
     
+
+
+    
+    
+  
+    
+
 }

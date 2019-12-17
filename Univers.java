@@ -21,6 +21,7 @@ class Univers {
         this.name = name;
     }
 
+
     public double getLength() {
         return length;
     }
@@ -47,7 +48,14 @@ class Univers {
 
     public void setCarte(Carte carte) {
         this.carte = carte;
-    } 
+
+
+   
+    
+    
+    
+
+
     
     
    
