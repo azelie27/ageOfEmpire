@@ -1,43 +1,43 @@
+import java.util.ArrayList;
+import java.util.Arrays;
+
 class Building {
 
-    private String house;
-    private String castle;
-    private String windmill;
+    private ArrayList<Ressource> ressources;
+    private int[][] size;
 
-    public Building(String house, String castle, String windmill) {
-        this.house = house;
-        this.castle = castle;
-        this.windmill = windmill;
+    public Building(ArrayList<Ressource> ressources, int[][] size) {
+        this.ressources = ressources;
+        this.size = size;
     }
 
-    public String getHouse() {
-        return house;
+    public ArrayList<Ressource> getRessources() {
+        return ressources;
     }
 
-    public void setHouse(String house) {
-        this.house = house;
+    public void setRessources(ArrayList<Ressource> ressources) {
+        this.ressources = ressources;
     }
 
-    public String getCastle() {
-        return castle;
+    public int[][] getSize() {
+        return size;
     }
 
-    public void setCastle(String castle) {
-        this.castle = castle;
-    }
-
-    public String getWindmill() {
-        return windmill;
-    }
-
-    public void setWindmill(String windmill) {
-        this.windmill = windmill;
+    public void setSize(int[][] size) {
+        this.size = size;
     }
 
     @Override
     public String toString() {
-        return "Building [castle=" + castle + ", house=" + house + ", windmill=" + windmill + "]";
+        return "Building [ressources=" + ressources + ", size=" + Arrays.toString(size) + "]";
     }
+   
+    
+   
+    
+  
+
+   
     
 
 }

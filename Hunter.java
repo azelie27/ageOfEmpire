@@ -1,18 +1,33 @@
 
-class Hunter extends Human implements Attack {
+class Hunter extends Human implements ActionsHumains {
 
-    public Hunter() {
+    
+    public void attack() {
+
     }
 
-    public void attack() {
-        System.out.println("Throws arrows");
- 
-     }
-     
+    public Hunter(int pointdeVie, String armure) {
+        super(pointdeVie, armure);
+    }
+
     @Override
     public String toString() {
         return "Hunter []";
     }
+
+
+    public void mange() {
+
+    }
+
+    public void consruit() {
+
+    }
+
+
+    
+
+    
 
    
   

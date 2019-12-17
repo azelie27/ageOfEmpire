@@ -1,18 +1,38 @@
-class Pretre extends Human implements Attack {
+class Pretre extends Human implements ActionsHumains {
 
     
-    public Pretre() {
+
+
+    public void attack() {
+       
+
     }
 
-    
-    public void attack(){
-        System.out.println("Hits with a staff");
+    public Pretre(int pointdeVie, String armure) {
+        super(pointdeVie, armure);
     }
+
 
     @Override
     public String toString() {
         return "Pretre []";
     }
+
+
+    public void mange() {
+      
+
+    }
+
+
+    public void consruit() {
+       
+
+    }
+
+    
+    
+    
 
     
 

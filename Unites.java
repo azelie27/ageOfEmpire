@@ -5,22 +5,17 @@ import java.util.ArrayList;
 
 class Unites  {
 
-    private String name;
     private ArrayList <Human> humans;
     private ArrayList <Building> buildings;
+    private ArrayList <Ressource> ressources;
+    private ArrayList <Animal> animaux;
 
-    public Unites(String name, ArrayList<Human> humans, ArrayList<Building> buildings) {
-        this.name = name;
+    public Unites(ArrayList<Human> humans, ArrayList<Building> buildings, ArrayList<Ressource> ressources,
+            ArrayList<Animal> animaux) {
         this.humans = humans;
         this.buildings = buildings;
-    }
-
-    public String getName() {
-        return name;
-    }
-
-    public void setName(String name) {
-        this.name = name;
+        this.ressources = ressources;
+        this.animaux = animaux;
     }
 
     public ArrayList<Human> getHumans() {
@@ -39,21 +34,28 @@ class Unites  {
         this.buildings = buildings;
     }
 
+    public ArrayList<Ressource> getRessources() {
+        return ressources;
+    }
+
+    public void setRessources(ArrayList<Ressource> ressources) {
+        this.ressources = ressources;
+    }
+
+    public ArrayList<Animal> getAnimaux() {
+        return animaux;
+    }
+
+    public void setAnimaux(ArrayList<Animal> animaux) {
+        this.animaux = animaux;
+    }
+
     @Override
     public String toString() {
-        return "Unites [buildings=" + buildings + ", humans=" + humans + ", name=" + name + "]";
+        return "Unites [animaux=" + animaux + ", buildings=" + buildings + ", humans=" + humans + ", ressources="
+                + ressources + "]";
     }
 
     
-   
-    
-
-
-    
-
-    
-    
-
- 
 
 }
