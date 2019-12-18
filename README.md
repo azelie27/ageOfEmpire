@@ -36,7 +36,6 @@
 
 * Animal(String race, boolean comestible, boolean mangeLesGens, boolean tropMignon)
 
-**Type(Human human, Building building)**
 
 
 
