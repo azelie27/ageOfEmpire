@@ -1,11 +1,15 @@
 
 
-public class Animal {
+public class Animal implements Deplacement {
 
     private String race;
     private boolean comestible;
     private boolean mangeLesGens;
     private boolean tropMignon;
+
+    public Animal() {
+        
+    }
 
     public Animal(String race, boolean comestible, boolean mangeLesGens, boolean tropMignon) {
         this.race = race;
@@ -46,7 +50,21 @@ public class Animal {
         this.tropMignon = tropMignon;
     }
 
-    @Override
+
+    // ===== interface  =====
+    public void avance(int devant) {
+        System.out.println("Avance d'un pas");
+    }
+
+    public void tourneDroite(double angle) {
+        System.out.println("Tourne à droite " + angle + "°");
+    }
+  
+    public void tourneGauche(double angle) {
+        System.out.println("Tourne à gauche " + angle + "°");
+    }
+
+    
     public String toString() {
         return "Animal [comestible=" + comestible + ", mangeLesGens=" + mangeLesGens + ", race=" + race + ", tropMignon="
                 + tropMignon + "]";

@@ -1,5 +1,5 @@
 
-class Hunter extends Human implements ActionsHumains {
+class Hunter extends Human {
 
     
     public void attack() {

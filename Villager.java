@@ -1,34 +1,19 @@
 
-class Villager extends Human implements ActionsHumains {
+class Villager extends Human {
 
   
-
-    public void attack() {
-        System.out.println("attaque à la fouche");
-
-    }
-
-    public void mange() {
-
-    }
-
-    public void consruit() {
-
-    }
-
     public Villager() {
 
     }
-
-    
-
+  
     public Villager(int pointdeVie, String armure) {
-        super(pointdeVie, armure);
-
+        super(pointdeVie, "tunique");
     }
-    @Override
+
+
     public String toString() {
-        return "Villager []";
+        return "objet de la " + this.getClass() +"\nVillager [pointdeVie=" + this.getPointdeVie() 
+        + ", armure=" + this.getArmure() + "]";
     }
 
 

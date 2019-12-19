@@ -5,7 +5,6 @@ interface ActionsHumains {
 
     public void mange();
 
-
     public void consruit();
 
     

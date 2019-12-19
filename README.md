@@ -11,15 +11,20 @@
 * Tribu(String name, ArrayList<Human> human)
 
 * Human(int pointdeVie, String armure) 
-    * Hunter extends Human implements ActionsHumains
-    * Pretre extends Human implements ActionsHumains
-    * Villager extends Human implements ActionsHumains
-    * Warrior extends Human implements ActionsHumains
+    * Hunter extends Human implements ActionsHumains Deplacement
+    * Pretre extends Human implements ActionsHumains Deplacement
+    * Villager extends Human implements ActionsHumains Deplacement
+    * Warrior extends Human implements ActionsHumains Deplacement
 
 * interface ActionsHumains 
     * attack()
     * mange()
     * construit()
+
+* interface Deplacement 
+    * tourneDroite()
+    * tourneGauche()
+    * avance()
 
 * Building(ArrayList<Ressource> ressources, int[][] size) 
     * Chateau extends Building 
@@ -34,7 +39,7 @@
    * Vegetaux(int calorie, boolean comestible)
    * Metal
 
-* Animal(String race, boolean comestible, boolean mangeLesGens, boolean tropMignon)
+* Animal implements Deplacement(String race, boolean comestible, boolean mangeLesGens, boolean tropMignon)
 
 
 

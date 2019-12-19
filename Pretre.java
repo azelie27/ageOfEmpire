@@ -1,4 +1,4 @@
-class Pretre extends Human implements ActionsHumains {
+class Pretre extends Human {
 
     
 
