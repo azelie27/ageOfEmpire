@@ -11,7 +11,7 @@ class Villager extends Human implements ActionsHumains {
 
     }
 
-    public void consruit() {
+    public void construit() {
 
     }
 
@@ -28,6 +28,10 @@ class Villager extends Human implements ActionsHumains {
     @Override
     public String toString() {
         return "Villager []";
+    }
+
+    public void soigne() {
+       System.out.println("uses bandaids");
     }
 
 

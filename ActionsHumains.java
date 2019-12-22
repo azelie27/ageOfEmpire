@@ -5,10 +5,15 @@ interface ActionsHumains {
 
     public void mange();
 
+    public void construit();
 
-    public void consruit();
+    public void soigne();
 
-    
+
+
+
+
+
 }
 
 

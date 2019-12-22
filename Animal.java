@@ -12,6 +12,7 @@ public class Animal {
         this.comestible = comestible;
         this.mangeLesGens = mangeLesGens;
         this.tropMignon = tropMignon;
+        
     }
 
     public String getRace() {

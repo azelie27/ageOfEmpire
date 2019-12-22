@@ -25,8 +25,14 @@ class Pretre extends Human implements ActionsHumains {
     }
 
 
-    public void consruit() {
+    public void construit() {
        
+
+    }
+
+    
+    public void soigne() {
+       System.out.println("Throws healing spell");
 
     }
 

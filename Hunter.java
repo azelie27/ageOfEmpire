@@ -17,10 +17,20 @@ class Hunter extends Human implements ActionsHumains {
 
 
     public void mange() {
-
+        System.out.println("eats ");
     }
 
-    public void consruit() {
+
+    
+
+
+    public void construit() {
+       System.out.println("builds nothing");
+    }
+
+    
+    public void soigne() {
+        System.out.println("uses bandaids");
 
     }
 

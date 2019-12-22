@@ -11,20 +11,22 @@ class Warrior extends Human implements ActionsHumains {
         super(pointdeVie, armure);
     }
 
-    @Override
+    
     public String toString() {
         return "Warrior []";
     }
 
-    @Override
+    
     public void mange() {
-        // TODO Auto-generated method stub
+        System.out.println("eats");
+    }
+
+    
+    public void construit() {
 
     }
 
-    @Override
-    public void consruit() {
-        // TODO Auto-generated method stub
+    public void soigne() {
 
     }
 
