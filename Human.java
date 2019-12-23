@@ -32,6 +32,7 @@ class Human implements Deplacement, ActionsHumains, Serializable {
     // ===== interface  =====
        public void avance(int devant) {
         System.out.println("Avance d'un pas");
+        pointdeVie += 1;
     }
 
     public void tourneDroite(double angle) {
@@ -43,6 +44,7 @@ class Human implements Deplacement, ActionsHumains, Serializable {
     }
 
     public void attack() {
+        /*
         if ((this.getClass().getName()).equals("Hunter")) {
             System.out.println("attaque avec des flèches");            
         }
@@ -55,7 +57,7 @@ class Human implements Deplacement, ActionsHumains, Serializable {
         if ((this.getClass().getName()).equals("Warrior")) {
             System.out.println("attaque avec une épée");            
         }
-
+        */
 
     }
 
@@ -72,7 +74,7 @@ class Human implements Deplacement, ActionsHumains, Serializable {
     // ===== toString =====
     
     public String toString() {
-        return "Human [armure=" + armure + ", pointdeVie=" + pointdeVie + "]";
+        return "Human [pointdeVie=" + pointdeVie + ", armure=" + armure + "]";
     }
 
     

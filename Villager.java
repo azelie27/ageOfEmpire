@@ -11,13 +11,16 @@ class Villager extends Human {
     }
 
 
+    // ===== toString =====
     public String toString() {
         return "objet de la " + this.getClass() +"\nVillager [pointdeVie=" + this.getPointdeVie() 
         + ", armure=" + this.getArmure() + "]";
     }
 
-
-  
+    // ===== surcharge interface parents =====    
+    public void attack() {
+        System.out.println("attaque à la fourche");            
+    }
 
  
 }

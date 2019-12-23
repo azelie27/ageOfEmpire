@@ -39,7 +39,33 @@ class Main {
             e.printStackTrace();
         }
 
+        Human hum = new Human(55,"sans");
+        System.out.println(hum);
 
+    
+
+        
+        
+        ArrayList<Human> h = new ArrayList<Human>();
+        Unites unit = new Unites(h); // ATTENTION d'intancier le bon constructeur
+                            // avec un seul parametre
+        h.add(new Human(55, "sans"));
+        h.add(new Human(5, "noir"));
+        h.add(new Human(20, "jaune"));        
+        System.out.println(unit.point(h));
+        System.out.println(unit);
+        
+        ArrayList<Building> build = new ArrayList<Building>();
+        ArrayList<Ressource> ress = new ArrayList<Ressource>();
+        ArrayList<Animal> aniList = new ArrayList<Animal>();
+        build.add(new Building());
+        ress.add(new Ressource());
+        aniList.add(new Animal());        
+
+        Unites unit2 = new Unites(h, build, ress, aniList); 
+        System.out.println(unit2);
+
+        
         
     }
     

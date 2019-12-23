@@ -11,6 +11,10 @@ class Building {
         this.size = size;
     }
 
+    public Building () {
+        
+    }
+
     public ArrayList<Ressource> getRessources() {
         return ressources;
     }

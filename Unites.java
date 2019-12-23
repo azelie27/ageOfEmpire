@@ -9,6 +9,10 @@ class Unites  {
     private ArrayList <Building> buildings;
     private ArrayList <Ressource> ressources;
     private ArrayList <Animal> animaux;
+ 
+    public Unites() {
+
+    }
 
     public Unites(ArrayList<Human> humans, ArrayList<Building> buildings, ArrayList<Ressource> ressources,
             ArrayList<Animal> animaux) {
@@ -17,6 +21,11 @@ class Unites  {
         this.ressources = ressources;
         this.animaux = animaux;
     }
+
+    public Unites(ArrayList<Human> humans) {
+        this.humans = humans;
+    }
+
 
     public ArrayList<Human> getHumans() {
         return humans;
@@ -50,12 +59,22 @@ class Unites  {
         this.animaux = animaux;
     }
 
-    @Override
+
     public String toString() {
-        return "Unites [animaux=" + animaux + ", buildings=" + buildings + ", humans=" + humans + ", ressources="
-                + ressources + "]";
+        return "Unites [animaux=" + this.getAnimaux() 
+                        + ", buildings=" + this.getBuildings() 
+                        + ", humans=" + this.point(getHumans())
+                        + ", ressources=" + this.getRessources() 
+                        + "]";
     }
 
-    
+    public int point(ArrayList<Human> h) {    
+        int sante = 0;
+        int taille = h.size(); // du tableau
+        for (int i = 0; i < taille; i ++) {
+            sante += h.get(i).getPointdeVie();
+        }
+        return sante;
+    }
 
 }

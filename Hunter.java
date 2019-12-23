@@ -1,31 +1,25 @@
 
 class Hunter extends Human {
 
-    
-    public void attack() {
+    public Hunter() {
 
     }
-
+ 
     public Hunter(int pointdeVie, String armure) {
         super(pointdeVie, armure);
     }
 
-    @Override
+
+    // ===== toString =====
     public String toString() {
         return "Hunter []";
     }
 
-
-    public void mange() {
-
+    // ===== surcharge interface parents =====    
+    public void attack() {
+        System.out.println("attaque avec des flèches");            
     }
 
-    public void consruit() {
-
-    }
-
-
-    
 
     
 

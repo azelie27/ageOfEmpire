@@ -2,28 +2,28 @@
 
 public class Animal implements Deplacement {
 
-    private String race;
+    private String espece;
     private boolean comestible;
     private boolean mangeLesGens;
     private boolean tropMignon;
 
     public Animal() {
-        
+
     }
 
-    public Animal(String race, boolean comestible, boolean mangeLesGens, boolean tropMignon) {
-        this.race = race;
+    public Animal(String espece, boolean comestible, boolean mangeLesGens, boolean tropMignon) {
+        this.espece = espece;
         this.comestible = comestible;
         this.mangeLesGens = mangeLesGens;
         this.tropMignon = tropMignon;
     }
 
-    public String getRace() {
-        return race;
+    public String getEspece() {
+        return espece;
     }
 
-    public void setRace(String race) {
-        this.race = race;
+    public void setEspece(String espece) {
+        this.espece = espece;
     }
 
     public boolean isComestible() {
@@ -66,7 +66,7 @@ public class Animal implements Deplacement {
 
     
     public String toString() {
-        return "Animal [comestible=" + comestible + ", mangeLesGens=" + mangeLesGens + ", race=" + race + ", tropMignon="
+        return "Animal [comestible=" + comestible + ", mangeLesGens=" + mangeLesGens + ", espece=" + espece + ", tropMignon="
                 + tropMignon + "]";
     }
 
